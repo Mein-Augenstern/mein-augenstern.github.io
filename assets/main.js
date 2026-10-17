@@ -8,7 +8,7 @@
     "Java 后端 × AI 应用工程",
     "LangChain / LangGraph 智能体",
     "分布式支付 · 生产实践",
-    "8 年知识体系 · 生产反哺式写作",
+    "2016 年入行 · 生产反哺式写作",
   ];
   var typer = document.getElementById("typer");
   if (typer && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
