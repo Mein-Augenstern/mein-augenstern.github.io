@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="XIAOPU · 后端工程 × AI 应用。8 年持续维护的知识体系，生产实践反哺式写作。">
+  <title>XIAOPU · Backend × AI Engineer</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">XIAOPU<span class="brand-dot">_</span></a>
+    <nav class="nav">
+      <a href="#engineering">工程</a>
+      <a href="#skills">技能</a>
+      <a href="#notes">知识库</a>
+      <a href="#timeline">轨迹</a>
+      <a href="#about">关于</a>
+      <a class="nav-github" href="https://github.com/Mein-Augenstern" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-main">
+        <p class="hero-kicker mono">// backend engineering × ai application</p>
+        <h1 class="hero-title">把每个结论<br>追到<em>源码</em>与<em>生产</em></h1>
+        <p class="hero-sub"><span id="typer" class="mono"></span><span class="caret"></span></p>
+        <div class="hero-links">
+          <a class="btn btn-primary" href="#engineering">看工程</a>
+          <a class="btn" href="https://github.com/Mein-Augenstern/MUYI" target="_blank" rel="noopener">知识库 ↗</a>
+        </div>
+        <dl class="stats mono">
+          <div><dt>264+</dt><dd>深度笔记</dd></div>
+          <div><dt>8yr</dt><dd>持续维护</dd></div>
+          <div><dt>16</dt><dd>容器微服务</dd></div>
+          <div><dt>3+</dt><dd>生产反哺长文</dd></div>
+        </dl>
+      </div>
+      <aside class="hero-term mono" aria-hidden="true">
+        <div class="term-bar"><i></i><i></i><i></i><span>~/me</span></div>
+        <pre><span class="t-p">$</span> whoami
+<span class="t-ok">backend → ai-application engineer</span>
+<span class="t-p">$</span> git log --oneline MUYI | wc -l
+<span class="t-ok">264</span> <span class="t-dim"># 深度笔记，2018 年至今</span>
+<span class="t-p">$</span> ls engineering/
+<span class="t-ok">star-site/  voice-utils/  MUYI/</span>
+<span class="t-p">$</span> <span class="caret"></span></pre>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ENGINEERING -->
+  <section id="engineering" class="section reveal">
+    <div class="wrap">
+      <p class="section-kicker mono">01 / engineering</p>
+      <h2 class="section-title">工程实践</h2>
+      <div class="cards">
+        <article class="card">
+          <header>
+            <span class="card-tag mono">platform</span>
+            <h3>star-site · 家庭健康管理平台</h3>
+          </header>
+          <p>面向中国中产家庭的全栈产品：11 个 Java 微服务（COLA 分层 / RPC 门卫切面 / 事务军规）+ Python LangChain 智能体服务（ReAct 工具调用 / SSE 流式 / JWT 身份链）+ 小程序与 Web 双端。</p>
+          <ul class="card-list mono">
+            <li>payment：mock / 支付宝 / 微信三渠道，HMAC 验签 + CAS 幂等</li>
+            <li>全局 ID：sequence 表 + 雪花，时钟回拨钳制</li>
+            <li>16 容器 Docker 编排，阿里云双节点部署</li>
+          </ul>
+          <footer class="mono dim">私有仓库 · 按需演示</footer>
+        </article>
+        <article class="card">
+          <header>
+            <span class="card-tag mono">voice</span>
+            <h3>voice-utils · 终端语音工程</h3>
+          </header>
+          <p>对着终端说话直接驱动编码代理：VAD 断句 → 云端/本地 ASR 双引擎 → 指令派发 → TTS 播报，附认知蒸馏（LLM 从历史会话提炼个人偏好档案）。</p>
+          <ul class="card-list mono">
+            <li>Intel Mac 依赖钉版策略（onnxruntime / PyAV）</li>
+            <li>real_user 判据：真人消息与系统注入的严格分离</li>
+            <li>全量教学级注释，可作 Python 工程范本</li>
+          </ul>
+          <footer class="mono"><a href="https://github.com/Mein-Augenstern/voice-utils" target="_blank" rel="noopener">github.com/Mein-Augenstern/voice-utils ↗</a></footer>
+        </article>
+        <article class="card">
+          <header>
+            <span class="card-tag mono">knowledge</span>
+            <h3>MUYI · 个人知识库</h3>
+          </header>
+          <p>2018 年至今的后端 × AI 知识体系：264+ 篇源码级笔记，四轨结构（后端内核 / AI 工程 / 架构云原生 / 算法），生产实践反哺式维护——每个上线的组件回写一篇复盘。</p>
+          <ul class="card-list mono">
+            <li>并发 26 篇 / JVM 32 篇 / Spring 20 篇 / 数据库 17 篇</li>
+            <li>Redis、消息队列、系统设计补全中</li>
+            <li>自测清单：121 题 × 答案定位 × 季度复查</li>
+          </ul>
+          <footer class="mono"><a href="https://github.com/Mein-Augenstern/MUYI" target="_blank" rel="noopener">github.com/Mein-Augenstern/MUYI ↗</a></footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt reveal">
+    <div class="wrap">
+      <p class="section-kicker mono">02 / skills</p>
+      <h2 class="section-title">技能矩阵</h2>
+      <table class="skill-table">
+        <thead><tr><th>领域</th><th>技能</th><th class="mono">佐证</th></tr></thead>
+        <tbody>
+          <tr><td>Java 内核</td><td>并发编程（AQS / 线程池 / JMM / 虚拟线程）、JVM（内存模型 / GC / 线上排查）、集合源码</td><td class="mono"><a href="https://github.com/Mein-Augenstern/MUYI" target="_blank" rel="noopener">~150 篇 ↗</a></td></tr>
+          <tr><td>框架</td><td>Spring 全家桶（IOC / AOP / 事务 / 循环依赖源码级）、MyBatis、Netty</td><td class="mono">同上</td></tr>
+          <tr><td>存储</td><td>MySQL（索引 / 锁 / 分库分表）、Redis（缓存体系 / 分布式锁）</td><td class="mono">数据库 17 篇 + redis</td></tr>
+          <tr><td>分布式</td><td>CAP / 一致性协议 / 分布式事务理论 + 生产组件实现（ID / 支付验签）</td><td class="mono"><a href="https://github.com/Mein-Augenstern/MUYI" target="_blank" rel="noopener">架构云原生 ↗</a></td></tr>
+          <tr><td>AI 应用</td><td>LangChain / LangGraph 智能体、RAG、Prompt 工程、ASR / TTS 全链路</td><td class="mono">ai-service 实战</td></tr>
+          <tr><td>云原生</td><td>Docker 多服务编排、K8s</td><td class="mono">16 容器运行形态</td></tr>
+          <tr><td>工程素养</td><td>代码军规（事务模板 / 静态扫描门禁）、安全（SSRF / 路径穿越 / HMAC）</td><td class="mono">生产反哺篇</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- NOTES -->
+  <section id="notes" class="section reveal">
+    <div class="wrap">
+      <p class="section-kicker mono">03 / notes</p>
+      <h2 class="section-title">知识库精选<span class="title-note">生产实践反哺 · 代码可追溯</span></h2>
+      <div class="note-list">
+        <a class="note-item" href="https://github.com/Mein-Augenstern/MUYI/blob/master/C-%E6%9E%B6%E6%9E%84%E4%B8%8E%E4%BA%91%E5%8E%9F%E7%94%9F/%E5%88%86%E5%B8%83%E5%BC%8FID-%E4%BB%8E%E9%9B%AA%E8%8A%B1%E7%AE%97%E6%B3%95%E5%88%B0%E7%94%9F%E4%BA%A7%E5%AE%9E%E7%8E%B0.md" target="_blank" rel="noopener">
+          <span class="mono note-no">001</span>
+          <span class="note-body"><strong>分布式 ID：从雪花算法到生产实现</strong><span class="dim">__global__ 池 + LAST_INSERT_ID 原子租约 · 时钟回拨钳制 · 一次源码审计发现的真实边界</span></span>
+          <span class="mono note-meta">357 行</span>
+        </a>
+        <a class="note-item" href="https://github.com/Mein-Augenstern/MUYI/blob/master/A-%E5%90%8E%E7%AB%AF%E5%86%85%E6%A0%B8/java/%E5%AE%89%E5%85%A8/%E6%94%AF%E4%BB%98%E5%9B%9E%E8%B0%83%E7%9A%84HMAC%E9%AA%8C%E7%AD%BE%E4%B8%8E%E5%B9%82%E7%AD%89%E8%AE%BE%E8%AE%A1.md" target="_blank" rel="noopener">
+          <span class="mono note-no">002</span>
+          <span class="note-body"><strong>支付回调的 HMAC 验签与幂等设计</strong><span class="dim">时序安全比较 · CAS 状态机五层幂等语义 · 乱序回调与对账兜底</span></span>
+          <span class="mono note-meta">433 行</span>
+        </a>
+        <a class="note-item" href="https://github.com/Mein-Augenstern/MUYI/blob/master/A-%E5%90%8E%E7%AB%AF%E5%86%85%E6%A0%B8/java/redis/%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F-%E5%87%BB%E7%A9%BF-%E9%9B%AA%E5%B4%A9.md" target="_blank" rel="noopener">
+          <span class="mono note-no">003</span>
+          <span class="note-body"><strong>缓存穿透 · 击穿 · 雪崩</strong><span class="dim">布隆误判率完整推导 · Redisson 看门狗 · Canal 订阅 binlog · 18 个代码段</span></span>
+          <span class="mono note-meta">701 行</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline" class="section section-alt reveal">
+    <div class="wrap">
+      <p class="section-kicker mono">04 / timeline</p>
+      <h2 class="section-title">学习轨迹</h2>
+      <ol class="timeline">
+        <li><span class="mono tl-year">2018</span><div><strong>Java 体系起步</strong><span class="dim">基础 / 集合 / 面试题驱动，知识库首篇落笔（2018-08）</span></div></li>
+        <li><span class="mono tl-year">2019–21</span><div><strong>深度与实战</strong><span class="dim">并发 · JVM · Spring 源码级深耕；滴滴 / 蚂蚁等真实面试复盘沉淀于「面经」</span></div></li>
+        <li><span class="mono tl-year">2023</span><div><strong>架构视野</strong><span class="dim">分布式理论 · 微服务 · DDD · 容器技术专题成体系</span></div></li>
+        <li><span class="mono tl-year">2024</span><div><strong>转向 AI</strong><span class="dim">LLM 学习材料起步；个人博客 v1 上线（11 月）</span></div></li>
+        <li><span class="mono tl-year">2025–26</span><div><strong>AI × 全栈实践</strong><span class="dim">LangChain 智能体 · 支付三渠道 · 双云部署 · 静态安全门禁；知识库完成四轨重构 + 生产反哺模式</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section reveal">
+    <div class="wrap about-grid">
+      <div>
+        <p class="section-kicker mono">05 / about</p>
+        <h2 class="section-title">关于我</h2>
+        <p>后端工程师，正在把八年积累的 Java 内功迁移到 AI 应用工程。我相信「用工程师的方式学习」：结论要追到源码，实践要回写成文章，知识要经得起面试官的连环追问。</p>
+        <p>白天构建产品（家庭健康平台 star-site），晚上维护知识库（MUYI）。所有展示的深度文章均来自真实上线的生产代码，可追溯、可验证。</p>
+        <div class="about-links mono">
+          <a href="https://github.com/Mein-Augenstern" target="_blank" rel="noopener">github.com/Mein-Augenstern ↗</a>
+          <a href="https://github.com/Mein-Augenstern/MUYI" target="_blank" rel="noopener">MUYI 知识库 ↗</a>
+        </div>
+      </div>
+      <img class="about-avatar" src="https://avatars.githubusercontent.com/Mein-Augenstern" alt="avatar" loading="lazy">
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap mono">
+    <span>© <span id="year"></span> XIAOPU</span>
+    <span class="dim">built with vanilla html/css/js · hosted on github pages</span>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
