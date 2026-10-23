@@ -1,0 +1,89 @@
+title: XIAOPU
+description: Personal blog for work and learning experience
+
+# Minimal Mistakes theme settings
+# theme: minimal-mistakes-jekyll  # for local development
+remote_theme: "mmistakes/minimal-mistakes"  # for GitHub Pages
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+timezone: Asia/Shanghai
+
+# Pagination
+paginate: 10
+paginate_path: /page:num/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .ruby-version
+
+# Minimal Mistakes settings
+minimal_mistakes_skin: default
+search: false
+
+# Site Author
+author:
+  name: XIAOPU
+  bio: "写代码是热爱，写到世界充满爱！"
+  location: China
+  avatar: /assets/images/avatar.jpg
+  email: 1752726507@qq.com
+  links:
+    - title: GitHub
+      url: https://github.com/Mein-Augenstern
+      icon: fab fa-github
+    - title: 邮箱
+      url: mailto:1752726507@qq.com
+      icon: fas fa-envelope
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:title/
+
+# 评论（giscus · GitHub Discussions）：仓库需开启 Discussions 且安装 giscus App
+# https://github.com/apps/giscus ；开发环境默认不渲染评论，GitHub Pages 构建即生产态
+repository: "Mein-Augenstern/mein-augenstern.github.io"
+comments:
+  provider: "giscus"
+  giscus:
+    repo: "Mein-Augenstern/mein-augenstern.github.io"
+    repo_id: "R_kgDONQqAOg"
+    category_name: "Announcements"
+    category_id: "DIC_kwDONQqAOs4DJani"
+    discussion_term: "pathname"
+    reactions_enabled: "1"
+    theme: "light"
+
+# Category and tag settings
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      comments: true
