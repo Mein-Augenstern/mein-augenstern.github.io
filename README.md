@@ -1,8 +1,18 @@
-# mein-augenstern.github.io
+# XIAOPU · 后端 × AI 工程师作品集
 
-XIAOPU 的个人主页：[mein-augenstern.github.io](https://mein-augenstern.github.io)
+> 本仓托管我的个人作品集站点 👉 **https://mein-augenstern.github.io/**
 
-- 定位：个人展示门户——工程实践 / 技能矩阵 / 知识库精选 / 学习轨迹
-- 技术形态：纯静态（vanilla HTML/CSS/JS），零构建依赖，推上即生效
-- 完整知识库见 [MUYI](https://github.com/Mein-Augenstern/MUYI)（264+ 篇，生产实践反哺式维护）
-- 2024 版 Jekyll 站（Minimal Mistakes 主题 + 210 篇镜像文）已退役，可在 git 历史中查看
+原生 HTML/CSS/JS 构建，GitHub Pages 托管。
+
+## 站点板块
+
+- **首屏**：十年后端统计（10yr 后端 / 300+ 笔记 / 16 容器微服务）+ 终端风代码块
+- **01 关于我**：后端转 AI 应用工程——白天做 star-site，晚上维护 MUYI 知识库
+- **02 工程实践**：star-site（家庭健康平台，11 个 Java 微服务 + LangChain 智能体）· voice-utils（终端语音工程）· MUYI（知识库）
+- **03 技能矩阵**：Java 内核 / 框架 / 存储 / 分布式 / AI 应用 / 云原生 / 前端 / 工程素养，均附佐证链接
+- **04 知识库精选**：分布式 ID / 支付 HMAC 验签 / 缓存三兄弟等深度文章
+- **05 学习轨迹**：2016 → 2026 时间线
+
+## 相关仓库
+
+[GitHub 主页](https://github.com/Mein-Augenstern) ｜ [MUYI 知识库](https://github.com/Mein-Augenstern/MUYI) ｜ [invest](https://github.com/Mein-Augenstern/invest) ｜ [constellation](https://github.com/Mein-Augenstern/constellation)
