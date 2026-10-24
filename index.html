@@ -39,7 +39,7 @@
         </div>
         <dl class="stats mono">
           <div><dt>10yr</dt><dd>后端工程</dd></div>
-          <div><dt>304+</dt><dd>深度笔记</dd></div>
+          <div><dt>342</dt><dd>深度笔记</dd></div>
           <div><dt>16</dt><dd>容器微服务</dd></div>
           <div><dt>3+</dt><dd>生产反哺长文</dd></div>
         </dl>
@@ -48,8 +48,8 @@
         <div class="term-bar"><i></i><i></i><i></i><span>~/me</span></div>
         <pre><span class="t-p">$</span> whoami
 <span class="t-ok">backend → ai-application engineer</span>
-<span class="t-p">$</span> git log --oneline MUYI | wc -l
-<span class="t-ok">264</span> <span class="t-dim"># 深度笔记，2018 年至今</span>
+<span class="t-p">$</span> find MUYI -name '*.md' | wc -l
+<span class="t-ok">342</span> <span class="t-dim"># 深度笔记，2018 年至今</span>
 <span class="t-p">$</span> ls engineering/
 <span class="t-ok">star-site/  voice-utils/  MUYI/</span>
 <span class="t-p">$</span> <span class="caret"></span></pre>
@@ -98,9 +98,9 @@
             <span class="card-tag mono">voice</span>
             <h3>voice-utils · 终端语音工程</h3>
           </header>
-          <p>对着终端说话直接驱动编码代理：VAD 断句 → 云端/本地 ASR 双引擎 → 指令派发 → TTS 播报，附认知蒸馏（LLM 从历史会话提炼个人偏好档案）。</p>
+          <p>对着终端说话直接驱动编码代理：VAD 断句 → 三 ASR 引擎（whisper / macOS / 腾讯云）→ 指令派发 → TTS 播报（火山豆包 / 腾讯云），附浏览器通话 Web 版与认知蒸馏（LLM 从历史会话提炼个人偏好档案）。</p>
           <ul class="card-list mono">
-            <li>Intel Mac 依赖钉版策略（onnxruntime / PyAV）</li>
+            <li>流式播报：逐句合成逐句播，首句 1~2s 出声</li>
             <li>real_user 判据：真人消息与系统注入的严格分离</li>
             <li>全量教学级注释，可作 Python 工程范本</li>
           </ul>
@@ -111,11 +111,11 @@
             <span class="card-tag mono">knowledge</span>
             <h3>MUYI · 个人知识库</h3>
           </header>
-          <p>2018 年至今的后端 × AI 知识体系：304+ 篇源码级笔记，四轨结构（后端内核 / AI 工程 / 架构云原生 / 算法），生产实践反哺式维护——每个上线的组件回写一篇复盘。</p>
+          <p>2018 年至今的后端 × AI 知识体系：342 篇源码级笔记，七轨结构（后端内核 / AI 工程 / 架构 / 云原生 / 算法 / 前端 / 金融信贷域），生产实践反哺式维护——每个上线的组件回写一篇复盘。</p>
           <ul class="card-list mono">
-            <li>并发 26 篇 / JVM 32 篇 / Spring 20 篇 / 数据库 17 篇</li>
-            <li>Redis、消息队列、系统设计补全中</li>
-            <li>自测清单：121 题 × 答案定位 × 季度复查</li>
+            <li>并发 27 篇 / JVM 24 篇 / Spring 22 篇 / 数据库 17 篇</li>
+            <li>金融信贷域 15 篇（授信/额度/计息/对账/风控）+ AI 工程 13 篇</li>
+            <li>自测清单：113 题 × 答案定位 × 季度复查 · AI 辅助治理违规降 84%</li>
           </ul>
           <footer class="mono"><a href="https://github.com/Mein-Augenstern/MUYI" target="_blank" rel="noopener">github.com/Mein-Augenstern/MUYI ↗</a></footer>
         </article>
