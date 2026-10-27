@@ -15,4 +15,4 @@
 
 ## 相关仓库
 
-[GitHub 主页](https://github.com/Mein-Augenstern) ｜ [MUYI 知识库](https://github.com/Mein-Augenstern/MUYI) ｜ [star-site-backend](https://github.com/Mein-Augenstern/star-site-backend) ｜ [star-site-components](https://github.com/Mein-Augenstern/star-site-components) ｜ [invest](https://github.com/Mein-Augenstern/invest) ｜ [constellation](https://github.com/Mein-Augenstern/constellation)
+[GitHub 主页](https://github.com/Mein-Augenstern) ｜ [MUYI 知识库](https://github.com/Mein-Augenstern/MUYI) ｜ [star-site-backend](https://github.com/Mein-Augenstern/star-site-backend) ｜ [star-site-components](https://github.com/Mein-Augenstern/star-site-components) ｜ [star-site-frontends](https://github.com/Mein-Augenstern/star-site-frontends) ｜ [ai-service](https://github.com/Mein-Augenstern/star-site-platform-ai-service) ｜ [invest](https://github.com/Mein-Augenstern/invest) ｜ [constellation](https://github.com/Mein-Augenstern/constellation)
