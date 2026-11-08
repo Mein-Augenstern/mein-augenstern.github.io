@@ -3,15 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 · MUYI</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <title>跳转中 · MUYI</title>
+  <!-- 智能跳板 404：/MUYI/* 旧链接 → muyi-axl.pages.dev 对应页面；其余 → 新主页 -->
+  <!-- 无 JS 兜底：meta refresh 到新主页 -->
+  <meta http-equiv="refresh" content="0; url=https://homepage-4k6.pages.dev/">
 </head>
-<body>
-  <main class="wrap" style="min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:18px;">
-    <p class="mono" style="color:var(--accent);">$ cat /404</p>
-    <h1 style="font-size:2.6rem;font-weight:800;">404<span class="mono" style="font-size:1rem;color:var(--ink-faint);margin-left:16px;">not found</span></h1>
-    <p class="dim">这个页面不存在——可能从未存在，也可能已归档进 git 历史。</p>
-    <p><a class="btn btn-primary" href="/" style="width:fit-content;">← 回首页</a></p>
-  </main>
+<body style="font-family:'SF Mono',ui-monospace,monospace;background:#0d1117;color:#8b949e;display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0;">
+  <p style="font-size:14px;">
+    <span style="color:#58a6ff;">$</span> 本站已迁移，正在跳转…
+    <a id="link" href="https://homepage-4k6.pages.dev/" style="color:#58a6ff;">手动进入</a>
+  </p>
+  <script>
+    (function () {
+      var path = location.pathname;
+      var target = "https://homepage-4k6.pages.dev/";
+      // 旧知识书路径（含 /MUYI 前缀）映射到新站同路径，保留查询串与锚点
+      if (path === "/MUYI" || path.indexOf("/MUYI/") === 0) {
+        target = "https://muyi-axl.pages.dev" + path.replace(/^\/MUYI/, "") + location.search + location.hash;
+      }
+      document.getElementById("link").href = target;
+      location.replace(target);
+    })();
+  </script>
 </body>
 </html>

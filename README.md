@@ -1,8 +1,24 @@
 # MUYI · 后端 × AI 工程师作品集
 
-> 本仓托管我的个人作品集站点 👉 **https://mein-augenstern.github.io/**
+> 正式站点已迁移至 Cloudflare Pages 👉 **https://homepage-4k6.pages.dev/**
+> 知识书 👉 **https://muyi-axl.pages.dev/**
 
-原生 HTML/CSS/JS 构建，GitHub Pages 托管。
+本仓的角色已变更为**主页源码仓库 + 旧链接跳板**：
+
+- `site/`：主页源码（原生 HTML/CSS/JS，Cloudflare Pages 部署源）
+- `index.html`：跳板页 —— 旧主页地址 0 秒跳转到新主页
+- `404.html`：智能跳板 —— `/MUYI/*` 旧知识书链接自动跳到 `muyi-axl.pages.dev` 对应页面，其余路径跳新主页（依赖用户站 404 接管机制）
+
+## 部署主页到 Cloudflare
+
+```bash
+wrangler pages deploy site --project-name=homepage
+```
+
+## 为什么迁移
+
+GitHub Pages 单次部署 10 分钟限制，MUYI 知识书（255MB / 1828 文件）连续 4 次超时；
+同一构建 Cloudflare Pages 67 秒完成。迁移后 GitHub Pages 保留为跳板，旧链接（收藏夹/搜索引擎收录）零 404。
 
 ## 站点板块
 
